@@ -1,6 +1,0 @@
-/Users/abtiwary/Development/CPP/PPMImage/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/abtiwary/Development/CPP/PPMImage/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/abtiwary/Development/CPP/PPMImage/cmake-build-debug/CMakeFiles/PPMImage.dir
-/Users/abtiwary/Development/CPP/PPMImage/cmake-build-debug/vendor/spdlog/CMakeFiles/rebuild_cache.dir
-/Users/abtiwary/Development/CPP/PPMImage/cmake-build-debug/vendor/spdlog/CMakeFiles/edit_cache.dir
-/Users/abtiwary/Development/CPP/PPMImage/cmake-build-debug/vendor/spdlog/CMakeFiles/spdlog.dir
