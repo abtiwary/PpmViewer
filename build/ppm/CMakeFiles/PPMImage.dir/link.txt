@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libPPMImage.a CMakeFiles/PPMImage.dir/src/PPMImage.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libPPMImage.a

@@ -87,14 +87,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abtiwary/Development/CPP/PPMImage/build/CMakeFiles /Users/abtiwary/Development/CPP/PPMImage/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/abtiwary/Development/CPP/PPMImage/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/abtiwary/Development/CPP/PPMImage/build/CMakeFiles /Users/abtiwary/Development/CPP/PPMImage/build/ppm//CMakeFiles/progress.marks
+	cd /Users/abtiwary/Development/CPP/PPMImage/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ppm/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abtiwary/Development/CPP/PPMImage/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/abtiwary/Development/CPP/PPMImage/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ppm/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,81 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/abtiwary/Development/CPP/PPMImage/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ppm/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/abtiwary/Development/CPP/PPMImage/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ppm/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/abtiwary/Development/CPP/PPMImage/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named PPMApp
+# Convenience name for target.
+ppm/CMakeFiles/PPMImage.dir/rule:
+	cd /Users/abtiwary/Development/CPP/PPMImage/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ppm/CMakeFiles/PPMImage.dir/rule
+.PHONY : ppm/CMakeFiles/PPMImage.dir/rule
 
-# Build rule for target.
-PPMApp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PPMApp
-.PHONY : PPMApp
-
-# fast build rule for target.
-PPMApp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PPMApp.dir/build.make CMakeFiles/PPMApp.dir/build
-.PHONY : PPMApp/fast
-
-#=============================================================================
-# Target rules for targets named PPMImage
-
-# Build rule for target.
-PPMImage: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PPMImage
+# Convenience name for target.
+PPMImage: ppm/CMakeFiles/PPMImage.dir/rule
 .PHONY : PPMImage
 
 # fast build rule for target.
 PPMImage/fast:
-	$(MAKE) $(MAKESILENT) -f ppm/CMakeFiles/PPMImage.dir/build.make ppm/CMakeFiles/PPMImage.dir/build
+	cd /Users/abtiwary/Development/CPP/PPMImage/build && $(MAKE) $(MAKESILENT) -f ppm/CMakeFiles/PPMImage.dir/build.make ppm/CMakeFiles/PPMImage.dir/build
 .PHONY : PPMImage/fast
 
-#=============================================================================
-# Target rules for targets named spdlog
-
-# Build rule for target.
-spdlog: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 spdlog
-.PHONY : spdlog
-
-# fast build rule for target.
-spdlog/fast:
-	$(MAKE) $(MAKESILENT) -f vendor/spdlog/CMakeFiles/spdlog.dir/build.make vendor/spdlog/CMakeFiles/spdlog.dir/build
-.PHONY : spdlog/fast
-
-main.o: main.cpp.o
-.PHONY : main.o
+src/PPMImage.o: src/PPMImage.cpp.o
+.PHONY : src/PPMImage.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PPMApp.dir/build.make CMakeFiles/PPMApp.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/PPMImage.cpp.o:
+	cd /Users/abtiwary/Development/CPP/PPMImage/build && $(MAKE) $(MAKESILENT) -f ppm/CMakeFiles/PPMImage.dir/build.make ppm/CMakeFiles/PPMImage.dir/src/PPMImage.cpp.o
+.PHONY : src/PPMImage.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/PPMImage.i: src/PPMImage.cpp.i
+.PHONY : src/PPMImage.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PPMApp.dir/build.make CMakeFiles/PPMApp.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/PPMImage.cpp.i:
+	cd /Users/abtiwary/Development/CPP/PPMImage/build && $(MAKE) $(MAKESILENT) -f ppm/CMakeFiles/PPMImage.dir/build.make ppm/CMakeFiles/PPMImage.dir/src/PPMImage.cpp.i
+.PHONY : src/PPMImage.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/PPMImage.s: src/PPMImage.cpp.s
+.PHONY : src/PPMImage.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PPMApp.dir/build.make CMakeFiles/PPMApp.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/PPMImage.cpp.s:
+	cd /Users/abtiwary/Development/CPP/PPMImage/build && $(MAKE) $(MAKESILENT) -f ppm/CMakeFiles/PPMImage.dir/build.make ppm/CMakeFiles/PPMImage.dir/src/PPMImage.cpp.s
+.PHONY : src/PPMImage.cpp.s
 
 # Help Target
 help:
@@ -187,12 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... PPMApp"
 	@echo "... PPMImage"
-	@echo "... spdlog"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/PPMImage.o"
+	@echo "... src/PPMImage.i"
+	@echo "... src/PPMImage.s"
 .PHONY : help
 
 
@@ -204,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/abtiwary/Development/CPP/PPMImage/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

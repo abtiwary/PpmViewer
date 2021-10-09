@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.20.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.20.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.20.3/CMakeSystem.cmake"
+  "../ppm/CMakeLists.txt"
   "../vendor/spdlog/CMakeLists.txt"
   "../vendor/spdlog/cmake/ide.cmake"
   "../vendor/spdlog/cmake/utils.cmake"
@@ -130,11 +131,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.20.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.20.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "ppm/CMakeFiles/CMakeDirectoryInformation.cmake"
   "vendor/spdlog/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/PPMImage.dir/DependInfo.cmake"
+  "CMakeFiles/PPMApp.dir/DependInfo.cmake"
+  "ppm/CMakeFiles/PPMImage.dir/DependInfo.cmake"
   "vendor/spdlog/CMakeFiles/spdlog.dir/DependInfo.cmake"
   )

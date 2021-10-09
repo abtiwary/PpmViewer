@@ -63,18 +63,36 @@ CMAKE_BINARY_DIR = /Users/abtiwary/Development/CPP/PPMImage/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/PPMImage.dir/all
+all: CMakeFiles/PPMApp.dir/all
+all: ppm/all
 all: vendor/spdlog/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
+preinstall: ppm/preinstall
 preinstall: vendor/spdlog/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/PPMImage.dir/clean
+clean: CMakeFiles/PPMApp.dir/clean
+clean: ppm/clean
 clean: vendor/spdlog/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory ppm
+
+# Recursive "all" directory target.
+ppm/all: ppm/CMakeFiles/PPMImage.dir/all
+.PHONY : ppm/all
+
+# Recursive "preinstall" directory target.
+ppm/preinstall:
+.PHONY : ppm/preinstall
+
+# Recursive "clean" directory target.
+ppm/clean: ppm/CMakeFiles/PPMImage.dir/clean
+.PHONY : ppm/clean
 
 #=============================================================================
 # Directory level rules for directory vendor/spdlog
@@ -92,30 +110,57 @@ vendor/spdlog/clean: vendor/spdlog/CMakeFiles/spdlog.dir/clean
 .PHONY : vendor/spdlog/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/PPMImage.dir
+# Target rules for target CMakeFiles/PPMApp.dir
 
 # All Build rule for target.
-CMakeFiles/PPMImage.dir/all: vendor/spdlog/CMakeFiles/spdlog.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PPMImage.dir/build.make CMakeFiles/PPMImage.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PPMImage.dir/build.make CMakeFiles/PPMImage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/abtiwary/Development/CPP/PPMImage/build/CMakeFiles --progress-num=1,2,3 "Built target PPMImage"
-.PHONY : CMakeFiles/PPMImage.dir/all
+CMakeFiles/PPMApp.dir/all: vendor/spdlog/CMakeFiles/spdlog.dir/all
+CMakeFiles/PPMApp.dir/all: ppm/CMakeFiles/PPMImage.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PPMApp.dir/build.make CMakeFiles/PPMApp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PPMApp.dir/build.make CMakeFiles/PPMApp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/abtiwary/Development/CPP/PPMImage/build/CMakeFiles --progress-num=1,2 "Built target PPMApp"
+.PHONY : CMakeFiles/PPMApp.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/PPMImage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abtiwary/Development/CPP/PPMImage/build/CMakeFiles 11
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/PPMImage.dir/all
+CMakeFiles/PPMApp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abtiwary/Development/CPP/PPMImage/build/CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/PPMApp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abtiwary/Development/CPP/PPMImage/build/CMakeFiles 0
-.PHONY : CMakeFiles/PPMImage.dir/rule
+.PHONY : CMakeFiles/PPMApp.dir/rule
 
 # Convenience name for target.
-PPMImage: CMakeFiles/PPMImage.dir/rule
+PPMApp: CMakeFiles/PPMApp.dir/rule
+.PHONY : PPMApp
+
+# clean rule for target.
+CMakeFiles/PPMApp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PPMApp.dir/build.make CMakeFiles/PPMApp.dir/clean
+.PHONY : CMakeFiles/PPMApp.dir/clean
+
+#=============================================================================
+# Target rules for target ppm/CMakeFiles/PPMImage.dir
+
+# All Build rule for target.
+ppm/CMakeFiles/PPMImage.dir/all:
+	$(MAKE) $(MAKESILENT) -f ppm/CMakeFiles/PPMImage.dir/build.make ppm/CMakeFiles/PPMImage.dir/depend
+	$(MAKE) $(MAKESILENT) -f ppm/CMakeFiles/PPMImage.dir/build.make ppm/CMakeFiles/PPMImage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/abtiwary/Development/CPP/PPMImage/build/CMakeFiles --progress-num=3,4 "Built target PPMImage"
+.PHONY : ppm/CMakeFiles/PPMImage.dir/all
+
+# Build rule for subdir invocation for target.
+ppm/CMakeFiles/PPMImage.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abtiwary/Development/CPP/PPMImage/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ppm/CMakeFiles/PPMImage.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abtiwary/Development/CPP/PPMImage/build/CMakeFiles 0
+.PHONY : ppm/CMakeFiles/PPMImage.dir/rule
+
+# Convenience name for target.
+PPMImage: ppm/CMakeFiles/PPMImage.dir/rule
 .PHONY : PPMImage
 
 # clean rule for target.
-CMakeFiles/PPMImage.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PPMImage.dir/build.make CMakeFiles/PPMImage.dir/clean
-.PHONY : CMakeFiles/PPMImage.dir/clean
+ppm/CMakeFiles/PPMImage.dir/clean:
+	$(MAKE) $(MAKESILENT) -f ppm/CMakeFiles/PPMImage.dir/build.make ppm/CMakeFiles/PPMImage.dir/clean
+.PHONY : ppm/CMakeFiles/PPMImage.dir/clean
 
 #=============================================================================
 # Target rules for target vendor/spdlog/CMakeFiles/spdlog.dir
@@ -124,7 +169,7 @@ CMakeFiles/PPMImage.dir/clean:
 vendor/spdlog/CMakeFiles/spdlog.dir/all:
 	$(MAKE) $(MAKESILENT) -f vendor/spdlog/CMakeFiles/spdlog.dir/build.make vendor/spdlog/CMakeFiles/spdlog.dir/depend
 	$(MAKE) $(MAKESILENT) -f vendor/spdlog/CMakeFiles/spdlog.dir/build.make vendor/spdlog/CMakeFiles/spdlog.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/abtiwary/Development/CPP/PPMImage/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11 "Built target spdlog"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/abtiwary/Development/CPP/PPMImage/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12 "Built target spdlog"
 .PHONY : vendor/spdlog/CMakeFiles/spdlog.dir/all
 
 # Build rule for subdir invocation for target.

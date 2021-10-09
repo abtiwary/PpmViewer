@@ -190,7 +190,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=PPMImage
+CMAKE_PROJECT_NAME:STATIC=PPMApp
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.9.2
@@ -270,10 +270,16 @@ CMAKE_STRIP:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-PPMImage_BINARY_DIR:STATIC=/Users/abtiwary/Development/CPP/PPMImage/build
+PPMApp_BINARY_DIR:STATIC=/Users/abtiwary/Development/CPP/PPMImage/build
 
 //Value Computed by CMake
-PPMImage_SOURCE_DIR:STATIC=/Users/abtiwary/Development/CPP/PPMImage
+PPMApp_SOURCE_DIR:STATIC=/Users/abtiwary/Development/CPP/PPMImage
+
+//Value Computed by CMake
+PPMImage_BINARY_DIR:STATIC=/Users/abtiwary/Development/CPP/PPMImage/build/ppm
+
+//Value Computed by CMake
+PPMImage_SOURCE_DIR:STATIC=/Users/abtiwary/Development/CPP/PPMImage/ppm
 
 //The directory containing a CMake configuration file for SDL2.
 SDL2_DIR:PATH=/usr/local/lib/cmake/SDL2
@@ -492,7 +498,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

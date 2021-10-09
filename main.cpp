@@ -5,7 +5,7 @@
 #include "spdlog/spdlog.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
 
-#include "PPMImage.hpp"
+#include "ppm/include/PPMImage.hpp"
 
 int main(int argc, char** argv) {
     auto logger = spdlog::stderr_color_mt("console");

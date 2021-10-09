@@ -1,8 +1,10 @@
-CMakeFiles/PPMImage.dir/main.cpp.o: \
-  /Users/abtiwary/Development/CPP/PPMImage/main.cpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/iostream \
+ppm/CMakeFiles/PPMImage.dir/src/PPMImage.cpp.o: \
+  /Users/abtiwary/Development/CPP/PPMImage/ppm/src/PPMImage.cpp \
+  /Users/abtiwary/Development/CPP/PPMImage/ppm/include/PPMImage.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/pthread.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/ostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/iosfwd \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/wchar.h \
@@ -190,8 +192,6 @@ CMakeFiles/PPMImage.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/xlocale/_wchar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/xlocale/_wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/streambuf \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/istream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/ostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/locale \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/nl_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/types.h \
@@ -223,177 +223,13 @@ CMakeFiles/PPMImage.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/bitset \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__bit_reference \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_main.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_stdinc.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_config.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_platform.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/AvailabilityMacros.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/TargetConditionals.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/begin_code.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/close_code.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/inttypes.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/inttypes.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/inttypes.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/xlocale/_inttypes.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/math.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/math.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/float.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/float.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/float.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_assert.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_atomic.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_audio.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_error.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_endian.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_mutex.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_thread.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_rwops.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_clipboard.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_cpuinfo.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/immintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/x86gprintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/hresetintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/uintrintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/mmintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/xmmintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/mm_malloc.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/emmintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/pmmintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/tmmintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/smmintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/popcntintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/wmmintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/__wmmintrin_aes.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/__wmmintrin_pclmul.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/clflushoptintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/clwbintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avxintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx2intrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/f16cintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/vpclmulqdqintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/bmiintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/bmi2intrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/lzcntintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/fmaintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512fintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512vlintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512bwintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512bitalgintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512cdintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512vpopcntdqintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512vpopcntdqvlintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512vnniintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512vlvnniintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avxvnniintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512dqintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512vlbitalgintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512vlbwintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512vlcdintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512vldqintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512erintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512ifmaintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512ifmavlintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512vbmiintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512vbmivlintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512vbmi2intrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512vlvbmi2intrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512pfintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512bf16intrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512vlbf16intrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/pkuintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/vaesintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/gfniintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/rtmintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/xtestintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/shaintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/fxsrintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/xsaveintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/xsaveoptintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/xsavecintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/xsavesintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/cetintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/adxintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/rdseedintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/wbnoinvdintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/cldemoteintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/waitpkgintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/movdirintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/pconfigintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/sgxintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/ptwriteintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/invpcidintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/keylockerintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/amxintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512vp2intersectintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/avx512vlvp2intersectintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/enqcmdintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/serializeintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/tsxldtrkintrin.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_events.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_video.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_pixels.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_rect.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_surface.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_blendmode.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_keyboard.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_keycode.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_scancode.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_mouse.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_joystick.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_gamecontroller.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_sensor.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_quit.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_gesture.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_touch.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_filesystem.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_haptic.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_hints.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_loadso.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_log.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_messagebox.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_metal.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_power.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_render.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_shape.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_system.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_timer.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_version.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_locale.h \
-  /usr/local/Cellar/sdl2/2.0.16/include/SDL2/SDL_misc.h \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/spdlog.h \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/common.h \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/tweakme.h \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/details/null_mutex.h \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/fmt/fmt.h \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/fmt/bundled/core.h \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/fmt/bundled/format.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/cmath \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/details/registry.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/unordered_map \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__hash_table \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__node_handle \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/optional \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/logger.h \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/details/log_msg.h \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/details/backtracer.h \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/details/log_msg_buffer.h \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/details/circular_q.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/vector \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__split_buffer \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/version.h \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/details/synchronous_factory.h \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/sinks/stdout_color_sinks.h \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/sinks/ansicolor_sink.h \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/details/console_globals.h \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/sinks/sink.h \
-  /Users/abtiwary/Development/CPP/PPMImage/vendor/spdlog/include/spdlog/formatter.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/array \
-  /Users/abtiwary/Development/CPP/PPMImage/PPMImage.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/fstream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/istream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/stack \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/deque \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__split_buffer \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/iomanip \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/sstream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/strstream
